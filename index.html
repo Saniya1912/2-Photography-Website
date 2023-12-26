@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- below 3 are Counterup script to provide counting animation -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- Aos animation for Animation on scroll below script is given -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Photography Website</title>
+</head>
+<body>
+    <nav>
+        <div class ="logo">
+            <h1>PHOTOGRAPHY</h1>
+        </div>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="icon" onclick="DisplayMenu()">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </a>
+                <a href="#" onclick="DisplayGallery()">GALLERY</a>
+                <a href="#about">ABOUT</a>
+                <a href="#travel">TRAVEL</a>
+                <a href="#socialmedia">CONTACT</a>
+                <a href="#socialmedia">SOCIAL MEDIA</a>
+        </div>
+    </nav>
+
+    <script>
+        function DisplayMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+
+            else{
+                x.className = "topnav"
+            }
+        }
+    </script>
+
+<div class="top">
+    <div class="loading-box">
+        <div class="loading">Loading</div>
+        <div class="counter">100</div>%
+    </div>
+
+    <div class="top-photos">
+        <img src="./Images/portrait2.jpg" alt="">
+        <img src="./Images/portrait4.jpg" alt="">
+        <img src="./Images/portrait3.jpg" alt="">
+    </div>
+    <center>
+    <div class="title">
+        <h1>PHOTOGRAPHY</h1>
+       
+        <div class="subtitle">
+SCROLL DOWN<br> 
+&#x2193; 
+        </div>
+    </div>
+    </center>
+
+</div>
+
+<div class="about" id="about">
+    <h1>WELCOME<br>TO<br>PHOTOGRAPHY</h1><br>
+     <p data-aos="fade-down">At PHOTOGRAPHY,<br><br>
+        We believe that every picture tells a story, 
+        and we're here to capture those stories for you. 
+        <br>We are a passionate team of photographers dedicated to freezing moments in time, 
+        <br>turning them into cherished memories that will last a lifetime.</p>
+</div>
+
+<div class="travel" id="travel">
+    <p data-aos="fade-down">
+        Discover Our <br>
+        <span onclick="DisplayGallery()">TRAVEL</span> <br>Section
+    </p>
+</div>
+
+<center>
+    <p style="font-size: 80px; font-family: 'Monoton',cursive; padding: 30px;">CONTACT</p>
+    <p style="font-size: 25px;">photography12@gmail.com</p>
+</center>
+
+<center>
+    <div class="socialmedia" id="socialmedia">
+        <p style="font-size: 80px; font-family: 'Monoton',cursive; padding: 30px;">SOCIAL MEDIA</p>
+ <div class="section">
+    <a href="https://instagram.com/silver_s_h_a_d_e_s_?igshid=YTQwZjQ0NmI0OA==">
+    <div class="container"data-aos="zoom-in">
+        <img src="./Images/insta (1).png" alt="">
+    </div>
+    </a>
+    <br>
+    INSTAGRAM
+ </div>
+
+ <div class="section">
+    <a href="https://pin.it/35iadIl">
+    <div class="container"data-aos="zoom-in">
+        <img src="./Images/pinterest2.png" alt="">
+    </div>
+    </a>
+    <br>
+    PINTEREST
+ </div>
+
+ <div class="section">
+    <a href="https://m.facebook.com/?wtsid=rdr_0abbJzjYRQntIyOVl">
+    <div class="container"data-aos="zoom-in">
+        <img src="./Images/facebook.png" alt="">
+    </div>
+    </a>
+    <br>
+    FACEBOOK
+ </div>
+    </div>
+</center>
+
+<center>
+<div class="gallery" id="portfolio"> 
+    <div class="close" onclick="DisplayGallery()">X</div> 
+        <div style="height: 750px;">
+        <p style="font-size: 80px; font-family: 'Monoton',cursive; padding: 30px;">EDITORIAL</p>
+
+            <div class="image one">
+                <img src="./Images/edit1.jpeg" alt="">   
+            </div>
+
+            <div class="image two">
+                <img src="./Images/edit2.png" alt="">   
+            </div>
+
+            <div class="image three">
+                <img src="./Images/edit3.jpg" alt="">   
+            </div>
+
+            <div class="image four">
+                <img src="./Images/edit4.jpg" alt="">   
+            </div>
+
+            <div class="image five">
+                <img src="./Images/edit5.jpg" alt="">   
+            </div>
+
+            <div class="image six">
+                <img src="./Images/edit6.jpg" alt="">   
+            </div>
+
+        </div>
+
+        <div style="height: 750px;">
+        <p style="font-size: 80px; font-family: 'Monoton',cursive; padding: 30px;">BLACK AND WHITE</p>
+    
+            <div class="image one">
+                <img src="./Images/bw9.jpg" alt="">   
+            </div>
+    
+            <div class="image two">
+                <img src="./Images/bw2.jpg" alt="">   
+            </div>
+    
+            <div class="image three">
+                <img src="./Images/bw3.jpg" alt="">   
+            </div>
+    
+            <div class="image four">
+                <img src="./Images/bw1.jpg" alt="">   
+            </div>
+    
+            <div class="image five">
+                <img src="./Images/bw6.jpg" alt="">   
+            </div>
+    
+            <div class="image six">
+                <img src="./Images/bw8.jpg" alt="">   
+            </div>
+    
+        </div>
+
+        <div style="height: 750px;">
+            <p style="font-size: 80px; font-family: 'Monoton',cursive; padding: 30px;">TRAVEL</p>
+        
+                <div class="image one">
+                    <img src="./Images/travel6.jpg" alt="">   
+                </div>
+        
+                <div class="image two">
+                    <img src="./Images/travel2.jpg" alt="">   
+                </div>
+        
+                <div class="image three">
+                    <img src="./Images/travel1.jpg" alt="">   
+                </div>
+        
+                <div class="image four">
+                    <img src="./Images/travel8.jpg" alt="">   
+                </div>
+        
+                <div class="image five">
+                    <img src="./Images/travel7.jpg" alt="">   
+                </div>
+        
+                <div class="image six">
+                    <img src="./Images/travel9.jpg" alt="">   
+                </div>
+        
+        </div>
+
+        <div style="height: 750px;">
+            <p style="font-size: 80px; font-family: 'Monoton',cursive; padding: 30px;">PORTRAITS</p>
+        
+                <div class="image one">
+                    <img src="./Images/portrait8.jpg" alt="">   
+                </div>
+        
+                <div class="image two">
+                    <img src="./Images/portrait5.jpg" alt="">   
+                </div>
+        
+                <div class="image three">
+                    <img src="./Images/portrait6.jpg" alt="">   
+                </div>
+        
+                <div class="image four">
+                    <img src="./Images/portrait7.jpg" alt="">   
+                </div>
+        
+                <div class="image five">
+                    <img src="./Images/portrait1.jpg" alt="">   
+                </div>
+        
+                <div class="image six">
+                    <img src="./Images/portrait2.jpg" alt="">   
+                </div>
+        
+        </div>
+
+        
+</div>
+</center>
+
+<script>
+    function DisplayGallery() {
+        var x = document.getElementById("portfolio");
+        if (x.className === "gallery") {
+            x.className += " active";
+        }
+
+        else{
+            x.className = "gallery"
+        }
+    }
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.counter').counterUp({
+            delay:13,
+            time: 1600
+        });
+    });
+</script>
+</body>
+</html>

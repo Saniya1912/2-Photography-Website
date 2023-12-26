@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*{
+    font-family: 'Urbanist', 'sans-serif';
+    box-sizing: border-box;
+    margin: 0px;
+    color: white;
+}
+
+:root{
+    --gray: rgb(177,177,177);
+}
+
+body{
+    background-color: black;
+}
+
+.topnav{
+    float: right;
+}
+
+.topnav a{
+    font-size: 18px;
+    text-decoration: none;
+    display: none;
+}
+
+
+.topnav a.icon{
+    margin: 30px;
+    display: block;
+    float: right;
+    width: auto;
+}
+
+.dot{
+    font-family: 'Monoton', cursive;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    margin: 2px ;
+    border-radius: 50%;
+    float: left;
+}
+
+
+.topnav.responsive{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    z-index: +2;
+    background-color: rgba(0,0,0,0.633);
+}
+
+.topnav.responsive a{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.topnav.responsive .icon{
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+}
+
+
+    .logo h1{
+        position: absolute;
+        font-family: 'Monoton', cursive;
+        margin: 20px;
+        font-size: 25px;
+    }
+
+.topnav.responsive .icon .dot:nth-child(1), .topnav.responsive .icon .dot:nth-child(2),
+.topnav.responsive .icon .dot:nth-child(3){
+        margin-left: 5px;
+        transition: all 0.65;
+        background-color: var(--gray);
+}
+
+.topnav.responsive a:hover{
+    font-family: 'Monoton', cursive;
+    color: var(--gray);
+}
+
+.loading-box{
+    margin-top: 350px;
+    width: 10%;
+    position: absolute;
+    margin-left: 45%;
+    text-align: center;
+    font-size: 25px;
+    animation: remove 18s;
+    opacity: 0;
+}
+
+@keyframes remove 
+{
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 1;
+    }
+    16%{
+        opacity: 0;
+    }
+}
+
+.top-photos{
+    text-align: center;
+    margin-top: 135px;
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    z-index: 1;
+}
+
+.top-photos img{
+    height: 480px;
+    transform: rotate3d(-285, 85, 30, 90deg);
+}
+
+.top-photos img:nth-child(1), .top-photos img:nth-child(2),
+.top-photos img:nth-child(3){
+    opacity: 0;
+    animation: reveal 6.5s;
+    animation-delay: 1s;
+}
+
+.top-photos img:nth-child(2){
+    animation-delay: 2s;
+}
+
+.top-photos img:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes reveal 
+{
+    0%{
+        opacity: 0;
+    }  
+    30%{
+        opacity: 0;
+        transform: rotate3d(-285, 85, 30, 90deg);
+
+    }    
+
+    45%{
+        opacity: 1;
+        transform: none;
+    }    
+
+    90%{
+        opacity: 1;
+        transform: none;
+    }    
+}
+
+
+.title{
+    margin-top: 300px;
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.title h1{
+    font-size: 90px;
+    font-family: 'Monoton', cursive;
+    animation: show 15s;
+    animation-delay: 0s;
+    opacity: 1;
+    
+}
+
+.subtitle{
+    font-size: 25px;
+    animation: show 17s;
+    animation-delay: 0s;
+    opacity: 1;
+}
+
+
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    } 
+    
+    69%{
+        opacity: 0;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    } 
+
+    70%{
+        opacity: 1;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    } 
+
+    80%{
+        opacity: 1;
+        transform: none;
+    } 
+}
+
+.top{
+    height: 750px;
+    background: linear-gradient(rgba(0,0,0,0.562),rgba(0,0,0,0.688)),
+    url(./Images/bg3.jpg);
+    background-size: cover;
+    animation: showing 15.5s;
+    animation-delay: 0s;
+}
+
+@keyframes showing {
+    0%{
+        height: 750px;
+        background: linear-gradient(rgba(0,0,0),rgba(0,0,0)),
+        url(./Images/bg1.jpg);
+        background-size: cover;
+    }
+
+    80%{
+        height: 750px;
+        background: linear-gradient(rgba(0,0,0),rgba(0,0,0)),
+        url(./Images/bg1.jpg);
+        background-size: cover;
+    }
+
+    100%{
+        height: 750px;
+        background: linear-gradient(rgba(0,0,0,0.562),rgba(0,0,0,0.688)),
+        url(./Images/bg3.jpg);
+        background-size: cover;
+    }
+    
+}
+
+.about{
+    background: linear-gradient(rgba(0,0,0,0.919),rgba(0,0,0,0.914)),
+    url(./Images/bw5.jpg);
+    height: 750px;
+    background-size: cover;
+}
+
+.about h1{
+    font-family: 'Monoton', cursive;
+    padding: 40px;
+   
+
+}
+.about p{
+   
+    line-height: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: var(--gray);
+}
+
+.travel{
+    background: linear-gradient(rgba(0,0,0,0.562),rgba(0,0,0,0.688)),
+    url(./Images/travel5.jpg);
+    height: 750px;
+    background-size: cover;
+}
+
+.travel p{
+    color: var(--gray);
+    padding-top: 150px;
+    font-size: 110px;
+    text-align: center;
+}
+
+.travel span{
+    font-family: 'Monoton', cursive;
+    color: white;
+    cursor: pointer;
+}
+
+.socialmedia .section{
+    height: 370px;
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.socialmedia .container{
+    height: 260px;
+    overflow: hidden;
+}
+
+.socialmedia .container img{
+    width: 100%;
+    height: auto;
+}
+
+.gallery{
+    display: none;
+}
+
+.gallery.active{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    display: block;
+    background-color: rgb(17, 17, 17);
+    animation: slide 1.5s;
+}
+
+@keyframes slide {
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.gallery .image{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.image img{
+    height: 500px;
+    width: auto;
+    border: 2px solid white;
+
+}
+
+.one, .two, .three, .four, .five, .six{
+    animation: photos 32s;
+    animation-delay: 1s;
+    opacity: 0;
+    position: absolute;
+}
+
+.two{
+    animation-delay: 7s;
+}
+
+.three{
+    animation-delay: 12s;
+}
+
+.four{
+    animation-delay: 17s;
+}
+
+.five{
+    animation-delay: 23s;
+}
+
+.six{
+    animation-delay: 28s;
+}
+
+@keyframes photos {
+
+    0%{
+        opacity: 0;
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    17%{
+        opacity: 0;
+    }
+}
+
+.close{
+    position: fixed;
+    margin: 30px;
+    float: right;
+    right: 15px;
+    cursor: pointer;
+
+}
